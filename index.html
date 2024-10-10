@@ -11,56 +11,57 @@
         <div class="navigation">
             <nav>
                 <ul>
-                    <li><a href="index.html">Головна </a></li>
-                    <li><a href="catalog.html">Каталог товарів </a></li>
-                    <li><a href="about.html">Про нас </a></li>
-                    <li><a href="basket.html">Кошик </a></li>
-                    <li><a href="contacts.html">Контакти </a></li>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог товарів</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="basket.html">Кошик</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
                 </ul>
             </nav>
         </div>
-        <img src="./images/Лого.png" width="130" height="auto" alt="Логотип">
+        <img class="logo" src="./images/Лого.png" width="140" height="auto" alt="Логотип">
     </header>
 
     <main>
         <div class="intro">
             <div class="intro-text">
-                <h2>Створи свій затишний куточок разом з нами!</h2>
+                <h2>  Створи свій затишний куточок разом з нами!</h2>
             </div>
             <div class="intro-img">
-                <img src="./images/hero.jpg" width="130" height="70" alt="Інтер'єр">
+                <img src="./images/hero.jpg" width="450" height="auto" alt="Інтер'єр">
             </div>
         </div>
         <hr class="custom-line">
 
         <div class="best-sellers">
-
             <h2>Лідери продажу</h2>
-
-            <table>
-                <tr>
-                    <td>
-                        <img src="./images/ліжко1.jpg" alt="Ліжко двоспальне Forli" width="150" height="150">
-                        <h3>Ліжко двоспальне Forli</h3>
-                        <p>17 500 ₴</p>
-                    </td>
-                    <td>
-                        <img src="./images/крісло1.jpg" alt="Крісло м’яке Vensan" width="150" height="150">
-                        <h3>Крісло м’яке Vensan</h3>
-                        <p>3 700 ₴</p>
-                    </td>
-                    <td>
-                        <img src="./images/шафа1.jpg" alt="Шафа розпашна Billund" width="150" height="150">
-                        <h3>Шафа розпашна Billund</h3>
-                        <p>8 000 ₴</p>
-                    </td>
-                    <td>
-                        <img src="./images/кухня1.jpg" alt="Комплект кухонних меблів" width="150" height="150">
-                        <h3>Комплект кухонних меблів</h3>
-                        <p>17 500 ₴</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="./images/ліжко1.jpg" alt="Ліжко двоспальне Forli" width="150" height="150">
+                    <h3>Ліжко двоспальне Forli</h3>
+                    <p>17 500 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/крісло1.jpg" alt="Крісло м’яке Vensan" width="150" height="150">
+                    <h3>Крісло м’яке Vensan</h3>
+                    <p>3 700 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/шафа1.jpg" alt="Шафа розпашна Billund" width="150" height="150">
+                    <h3>Шафа розпашна Billund</h3>
+                    <p>8 000 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/кухня1.jpg" alt="Комплект кухонних меблів" width="150" height="150">
+                    <h3>Комплект кухонних меблів</h3>
+                    <p>17 500 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/диван2.png" alt="Диван" width="150" height="150">
+                    <h3>Диван</h3>
+                    <p>17 500 ₴</p>
+                </div>
+            </div>
         </div>
 
         <div id="buttonContainer">
@@ -68,56 +69,58 @@
                 <button>Перейти до каталогу</button>
             </a>
         </div>
+        
         <hr class="custom-line">
-    
+
         <div class="reviews">
             <h2>Відгуки клієнтів</h2>
-            <table border="1" cellpadding="10">
-                <tr>
-                    <td>
-                        <p>“Просто в захваті від свого нового дивану з The Cozy Corner!" – Олена, Київ.</p>
-                    </td>
-                    <td>
-                        <p>"Рекомендую цей магазин всім, хто цінує якість і стиль." – Андрій, Харків.</p>
-                    </td>
-                    <td>
-                        <p>"Новий диван і крісла стали улюбленим місцем для відпочинку." – Сергій, Львів.</p>
-                    </td>
-                    <td>
-                        <p>"Якість меблів на висоті, а ціни приємно здивували!" – Олексій, Львів.</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="reviews-grid">
+                <div class="review">
+                    <p>“Просто в захваті від свого нового дивану з The Cozy Corner!" – Олена, Київ.</p>
+                </div>
+                <div class="review">
+                    <p>"Рекомендую цей магазин всім, хто цінує якість і стиль." – Андрій, Харків.</p>
+                </div>
+                <div class="review">
+                    <p>"Новий диван і крісла стали улюбленим місцем для відпочинку." – Сергій, Львів.</p>
+                </div>
+                <div class="review">
+                    <p>"Якість меблів на висоті, а ціни приємно здивували!" – Олексій, Львів.</p>
+                </div>
+            </div>
         </div>
-        
+
         <hr class="custom-line">
        
         <div class="recommended">
             <h2>Вам може сподобатись</h2>
-            <table border="1" cellpadding="10">
-                <tr>
-                    <td>
-                        <img src="./images/стіл1.jpg" alt="Стіл письмовий" width="150" height="150">
-                        <h3>Стіл письмовий</h3>
-                        <p>3 500 ₴</p>
-                    </td>
-                    <td>
-                        <img src="./images/дзеркало1.jpg" alt="Дзеркало кругле" width="150" height="150">
-                        <h3>Дзеркало кругле</h3>
-                        <p>1 500 ₴</p>
-                    </td>
-                    <td>
-                        <img src="./images/диван1.jpg" alt="Диван для вітальні" width="150" height="150">
-                        <h3>Диван для вітальні</h3>
-                        <p>17 500 ₴</p>
-                    </td>
-                    <td>
-                        <img src="./images/комод1.jpg" alt="Комод Garand" width="150" height="150">
-                        <h3>Комод Garand</h3>
-                        <p>7 300 ₴</p>
-                    </td>
-                </tr>
-            </table>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="./images/стіл1.jpg" alt="Стіл письмовий" width="150" height="150">
+                    <h3>Стіл письмовий</h3>
+                    <p>3 500 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/дзеркало1.jpg" alt="Дзеркало кругле" width="150" height="150">
+                    <h3>Дзеркало кругле</h3>
+                    <p>1 500 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/диван1.jpg" alt="Диван для вітальні" width="150" height="150">
+                    <h3>Диван для вітальні</h3>
+                    <p>17 500 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/комод1.jpg" alt="Комод Garand" width="150" height="150">
+                    <h3>Комод Garand</h3>
+                    <p>7 300 ₴</p>
+                </div>
+                <div class="product">
+                    <img src="./images/крісло2.png" alt="Крісло м’яке Vensan" width="150" height="150">
+                    <h3>Крісло м’яке Sara</h3>
+                    <p>3 700 ₴</p>
+                </div>
+            </div>
         </div>
 
         <div id="buttonContainer">
@@ -139,7 +142,6 @@
             </ul>
         </div>
         
-    
         <div id="buttonContainer">
             <a href="about.html">
                 <button>Більше про нас</button>
@@ -148,26 +150,19 @@
 
         <hr class="custom-line">
 
-        <div class="feedback-form">
-            <h2>Форма зворотнього зв'язку</h2>
-            <form action="/submit-feedback" method="post">
-                <label for="name">Ваше ім'я:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-    
-                <label for="email">Ваш email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-    
-                <label for="message">Повідомлення:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    
-                <input type="submit" value="Надіслати">
-            </form>
-        </div>
     </main>
     
-
     <footer>
-        <a href="./description.html">Опис предметної галузі</a>
+        <h3>THE COZY CORNER</h3>
+        <p>2024 ©</p>
+        <nav>
+            <ul class="social-icons">
+                <li><a href="#"><img src="./icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./icons/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="./icons/telegram.png" alt="Telegram"></a></li>
+                <li><a href="#"><img src="./icons/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
