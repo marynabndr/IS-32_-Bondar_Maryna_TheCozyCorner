@@ -235,3 +235,111 @@ footer .social-icons {
 
 
 
+
+
+/* Медія-запит для мобільних пристроїв з шириною екрану до 768px */
+@media (max-width: 768px) {
+  
+  header {
+    flex-direction: column; /* Елементи заголовка один під одним */
+    padding: 10px 20px; 
+  }
+
+  .navigation ul {
+    flex-direction: column; /* Навігаційне меню  вертикально */
+    gap: 10px; 
+  }
+
+  .intro {
+    flex-direction: column; /* Текст і зображення один під одним */
+    text-align: center; 
+  }
+
+  .intro-img img {
+    max-width: 100%; 
+    margin-top: 20px; 
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr; /* Всі продукти в один стовпець */
+    padding: 0; 
+  }
+
+  .best-sellers, .recommended, .reviews, .principles {
+    padding: 10px; 
+  }
+
+  button {
+    padding: 15px 20px; 
+  }
+
+  footer {
+    padding: 15px; 
+  }
+
+  footer .social-icons {
+    position: static; /* Іконки соціальних мереж будуть розташовані звичайно */
+    justify-content: center; /* Вирівнювання іконок по центру */
+    transform: none; /* Відміна попереднього зміщення для адаптації */
+    margin-top: 10px; 
+  }
+}
+
+
+/* Медія-запит для планшетів з шириною екрану від 769px до 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  header {
+    padding: 10px 20px; 
+  }
+
+  .intro {
+    flex-direction: column; /* Блок "intro"- вертикальний */
+  }
+
+  .intro-img img {
+    max-width: 80%; 
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Продукти в 2 колонки */
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr; /* Відгуки в 1 колонку */
+  }
+
+  .best-sellers, .recommended {
+    padding: 20px; 
+  }
+
+  footer {
+    padding: 15px; 
+  }
+
+  footer .social-icons {
+    right: 10px; 
+  }
+}
+
+
+/* Медія-запит для десктопів з шириною екрану від 1025px і більше */
+@media (min-width: 1025px) {
+  
+  .intro {
+    flex-direction: row; /* Елементи горизонтально */
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr); /* Продукти  в 5 колонок */
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr 1fr; /* Відгуки в 2 колонки */
+  }
+
+  footer .social-icons {
+    right: 30px; 
+  }
+}
+
