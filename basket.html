@@ -16,7 +16,18 @@
     </header>
 
     <main>
-    
+        <div class="intro">
+            <div class="intro-text">
+                <h2>     Створи свій затишний куточок разом з нами!</h2>
+            </div>
+            <div class="intro-img">
+                <img src="./images/hero.jpg" width="450" height="auto" alt="Інтер'єр">
+            </div>
+        </div>
+        <hr class="custom-line">
+        <h2 style="text-align: center;">Тут ви можете переглянути обрані вами товари</h2>
+        <div id="cart-items"></div>
+        <button id="clear-cart" style="margin-top: 20px;">Очистити кошик</button>
     </main>
     
     <footer>
@@ -31,8 +42,50 @@
             </ul>
         </nav>
     </footer>
+    <script>
+        // Відображення товарів у кошику
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        if (cart.length > 0) {
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+    
+                // Додаємо зображення товару
+                const itemImage = document.createElement('img');
+                itemImage.src = item.image;
+                itemImage.alt = item.name;
+                itemImage.width = 100;
+    
+                // Додаємо текстову інформацію
+                const itemDetails = document.createElement('div');
+                itemDetails.innerHTML = `
+                    <h3>${item.name}</h3>
+                    <p>${item.price} ₴</p>
+                `;
+    
+                // Додаємо елементи до контейнера
+                itemElement.appendChild(itemImage);
+                itemElement.appendChild(itemDetails);
+    
+                cartItemsContainer.appendChild(itemElement);
+            });
+        } else {
+            cartItemsContainer.textContent = 'Кошик порожній';
+        }
+    
+        // Очищення кошика
+        const clearCartButton = document.getElementById('clear-cart');
+        clearCartButton.addEventListener('click', () => {
+            localStorage.removeItem('cart');
+            cartItemsContainer.textContent = 'Кошик порожній';
+            alert('Кошик очищено!');
+        });
+    </script>
 
     <script src="menu.js"></script>
+    <script src="basket.js"></script>
     
 </body>
 </html>

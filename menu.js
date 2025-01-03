@@ -6,16 +6,12 @@ const menuItems = [
       subMenu: [
         { name: 'Шафи', link: 'catalog.html#wardrobes' },
         { name: 'Ліжка', link: 'catalog.html#beds' },
-        { name: 'Дивани та крісла', link: 'catalog.html#sofas' },
-        { name: 'Столи', link: 'catalog.html#tables' },
-        { name: 'Комоди і тумби', link: 'catalog.html#dressers' },
+        { name: 'Дивани', link: 'catalog.html#sofas' },
         { name: 'Кухні', link: 'catalog.html#kitchens' },
-        { name: 'Офісні меблі', link: 'catalog.html#office-furniture' }
       ]
     },
     { name: 'Про нас', link: 'about.html' },
-    { name: 'Кошик', link: 'basket.html' },
-    { name: 'Контакти', link: 'contacts.html' }
+    { name: 'Кошик', link: 'basket.html' }
   ];
   
   function generateMenu(menuData, container) {

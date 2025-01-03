@@ -90,7 +90,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #D9D2B0;
+    background-color: #d2cbaa;
     flex-direction: column;
     border-radius: 10px;
   }
@@ -147,6 +147,9 @@
   /* ===========================
      Блоки "Best Sellers" і "Recommended"
      =========================== */
+
+    
+   
   
   .best-sellers, .recommended {
     margin: 40px 0;
@@ -437,3 +440,91 @@
   }
 }
 
+
+  /* ABOUT */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.gallery__item {
+  background-color: #BFBC8A;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Стиль для елементів кошика */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2EDDC;
+  border: 1px solid #BFBC8A;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Збільшене зображення товару */
+.cart-item img {
+  width: 170px; /* Збільшено ширину */
+  height: 170px; /* Збільшено висоту */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px; /* Збільшено відступ між зображенням і текстом */
+}
+
+/* Вирівнювання текстової інформації */
+.cart-item .cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item h3 {
+  font-size: 20px; /* Трохи більший шрифт для заголовка */
+  color: #593A28;
+  margin: 0 0 5px 0;
+}
+
+.cart-item p {
+  font-size: 18px; /* Трохи більший шрифт для ціни */
+  color: #593A28;
+  margin: 0;
+}
+
+/* Стиль для кнопки "Видалити" або "Очистити" */
+.cart-item button {
+  background-color: #BFBC8A;
+  color: #593A28;
+  border: 1px solid #D9D2B0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+    /* Центрування кнопки */
+    margin: 0 auto;
+    display: block;
+}
+
+.cart-item button:hover {
+  background-color: #A29F78;
+}
