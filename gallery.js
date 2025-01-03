@@ -1,42 +1,42 @@
 const images = [ 
     {
-      preview: 'IMAGES/1.png',
-      original: 'IMAGES/1.png',
+      preview: 'images/1.png',
+      original: 'images/1.png',
       description: 'Image 1',
     },
     {
-      preview: 'IMAGES/2.png',
-      original: 'IMAGES/2.png',
+      preview: 'images/2.png',
+      original: 'images/2.png',
       description: 'Image 2',
     },
     {
-      preview: 'IMAGES/3.png',
-      original: 'IMAGES/3.png',
+      preview: 'images/3.png',
+      original: 'images/3.png',
       description: 'Image 3',
     },
     {
-      preview: 'IMAGES/4.png',
-      original: 'IMAGES/4.png',
+      preview: 'images/4.png',
+      original: 'images/4.png',
       description: 'Image 4',
     },
     {
-      preview: 'IMAGES/5.png',
-      original: 'IMAGES/5.png',
+      preview: 'images/5.png',
+      original: 'images/5.png',
       description: 'Image 5',
     },
     {
-      preview: 'IMAGES/6.png',
-      original: 'IMAGES/6.png',
+      preview: 'images/6.png',
+      original: 'images/6.png',
       description: 'Image 6',
     },
     {
-      preview: 'IMAGES/7.png',
-      original: 'IMAGES/7.png',
+      preview: 'images/7.png',
+      original: 'images/7.png',
       description: 'Image 7',
     },
     {
-      preview: 'IMAGES/8.png',
-      original: 'IMAGES/8.png',
+      preview: 'images/8.png',
+      original: 'images/8.png',
       description: 'Image 8',
     },
   ];
